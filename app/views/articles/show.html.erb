@@ -1,6 +1,7 @@
-<h2>This is the article</h2>
+<h2><%= @article.title %></h2>
 
-<%= @article.title %>
-<br>
-<br>
-<%= @article.text %>
+<p>
+  <%= @article.text %>
+</p>
+
+<%= link_to 'Back to Articles', articles_path %>
